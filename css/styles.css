@@ -558,7 +558,7 @@ button:focus{
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
     width: 100%;
-    padding: 8px 16px; /* padding: 10px 40px 10px 10px; */
+    padding: 8px 16px 8px 32px; /* padding: 10px 40px 10px 10px; */
     height: 40px;
     resize: none;
     transition: border-color 0.3s;
@@ -605,6 +605,15 @@ textarea{
     border: none;
 }
 
+.active-input{
+    border: 1px solid #4d5ae5;
+}
+.active-icon{
+    fill: #4d5ae5;
+}
+
+
+
 label{
     font-size: 12px;
     line-height: 1.16667;
@@ -635,4 +644,33 @@ label{
     line-height: 1.167;
     letter-spacing: 0.04em;
     color: #8e8f99;
+    margin-bottom: 24px;
+}
+
+.input-textarea{
+
+    height: 120px;
+    padding: 8px 16px;
+}
+.close-modal{
+    fill: #2e2f42;
+}
+.close-button{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 24px;
+    margin-top: 24px;
+    margin-left: 336px;
+}
+
+.input-wrapper{
+    position: relative;
+}
+
+.input-icon{
+    position: absolute;
+    left: 16px;
+    bottom: 11px;
 }
