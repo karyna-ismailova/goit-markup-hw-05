@@ -633,11 +633,12 @@ textarea{
     display: flex;
     align-items: flex-start;
     gap: 8px;
+    margin-bottom: 24px;
 }
 .checkbox-text{
     font-weight: 400;
     font-size: 12px;
-    line-height: 1.167;
+    line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8e8f99;
     margin-bottom: 24px;
@@ -647,6 +648,7 @@ textarea{
 
     height: 120px;
     padding: 8px 16px;
+    line-height: 1.17;
 }
 .close-modal{
     fill: #2e2f42;
@@ -699,4 +701,16 @@ textarea{
 
 .comment-section{
     margin-bottom: 16px;
+}
+
+.checkbox-sign{
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    fill: transparent;
 }
