@@ -15,7 +15,6 @@ main {
 
 img {
     display: block;
-    /* min-width: 100%; */
     object-fit: cover;
 }
 
@@ -136,26 +135,6 @@ button{
     height: 4px;
     background-color: #404bbf;
 }
-
-/* .navbar-item:active::after{
-    position: absolute;
-    bottom: -1px;
-    display: block;
-    content: "";
-    border-radius: 2px;
-    height: 4px;
-    color: #404bbf;
-    background-color: #404bbf;
-}
-.item-one:active::after {
-    width: 48px;
-}
-.item-two:active::after {
-    width: 66px;
-}
-.item-three:active::after {
-    width: 67px;
-} */
 
 .header-container{
 
@@ -506,7 +485,6 @@ button:focus{
     flex-direction: row;
     gap: 16px;
     border-radius: 4px;
-    /* padding: 8px 24px; */
     min-width: 165px;
     height: 40px;
     background: #4d5ae5;
@@ -568,17 +546,19 @@ button:focus{
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
     width: 100%;
-    padding: 8px 16px 8px 32px; /* padding: 10px 40px 10px 10px; */
+    padding-left: 38px;
     height: 40px;
     resize: none;
     transition: border-color 0.3s;
+    background-color: transparent;
+    outline: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-/* .modal-input:focus,
+.modal-input:focus,
 .modal-input:active {
     border-color: #4d5ae5;
-    /* Цвет рамки при фокусе */
-    /* box-shadow: 0 0 5px rgba(77, 90, 229, 0.5);}
-    Плавное свечение */ 
+}
+
 
 .label-input{
     display: block;
@@ -646,8 +626,6 @@ textarea{
     margin-bottom: 16px;
 }
 .modal-checkbox{
-    /* border-radius: 2px;
-    border: 1px solid rgba(46, 47, 66, 0.4); */
     width: 15px;
     height: 15px;
 }
@@ -714,5 +692,11 @@ textarea{
 .input-icon{
     position: absolute;
     left: 16px;
-    bottom: 11px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.comment-section{
+    margin-bottom: 16px;
 }
