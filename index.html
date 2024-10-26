@@ -496,34 +496,46 @@
 
         <p class="modal-title">Leave your contacts and we will call you back</p>
         <form class="modal-form">
+          <label class="label-input" for="user-name"> Name</label>
           <div class="input-wrapper">
-            <label>
-              Name
-              <input
-                class="modal-input active-input"
-                type="text"
-                name="name"
-                required
-              />
-            </label>
+            <input
+              class="modal-input active-input"
+              type="text"
+              name="name"
+              id="user-name"
+              required
+            />
+
             <svg class="input-icon active-icon" width="18" height="18">
               <use href="/images/icons.svg#icon-person"></use>
             </svg>
           </div>
+
+          <label class="label-input" for="tel">Phone</label>
           <div class="input-wrapper">
-            <label
-              >Phone
-              <input class="modal-input" type="tel" name="telephone" required />
-            </label>
+            <input
+              class="modal-input"
+              type="tel"
+              name="telephone"
+              id="tel"
+              required
+            />
+
             <svg class="input-icon" width="13" height="13">
               <use href="/images/icons.svg#icon-tel"></use>
             </svg>
           </div>
+
+          <label class="label-input" for="email">Email</label>
           <div class="input-wrapper">
-            <label
-              >Email
-              <input class="modal-input" type="email" name="email" required />
-            </label>
+            <input
+              class="modal-input"
+              type="email"
+              name="email"
+              id="email"
+              required
+            />
+
             <svg class="input-icon" width="18" height="24">
               <use href="/images/icons.svg#icon-email"></use>
             </svg>
