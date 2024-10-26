@@ -713,3 +713,8 @@ textarea{
     justify-content: center;
     fill: transparent;
 }
+.modal-checkbox:checked+ label .checkbox-sign{
+    background-color: #404bbf;
+    border: none;
+    fill:#F4F4FD;
+}
